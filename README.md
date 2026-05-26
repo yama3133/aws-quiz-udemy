@@ -18,10 +18,9 @@ AWS認定資格試験対策の従来的な形式のクイズアプリケーシ�
 
 ## 対象資格
 
-- AWS Solutions Architect Associate
-- AWS Solutions Architect Professional
-- AWS Developer Associate
-- その他のAWS認定試験
+**AWS Certified Generative AI Developer - Professional**
+
+生成AIを用いたAWSアプリケーション開発の実務スキル認定
 
 ## 技術スタック
 
