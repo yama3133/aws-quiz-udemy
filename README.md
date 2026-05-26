@@ -1,16 +1,100 @@
-# React + Vite
+# AWS Quiz Traditional
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+AWS認定資格試験対策の従来的な形式のクイズアプリケーションです。選択肢形式で段階的にAWS知識を習得できます。
 
-Currently, two official plugins are available:
+## 機能
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **従来的なクイズ形式**: シンプルで直感的な問題解答インターフェース
+- **複数の出題モード**:
+  - 順番に回答: 指定した順序で問題を出題
+  - ランダム出題: 問題をランダムに出題
+  - カテゴリー別: 特定カテゴリーに絞った学習
+  - 本番形式: 試験と同じ条件でのテスト
 
-## React Compiler
+- **即座フィードバック**: 回答後に正誤と解説を表示
+- **進捗管理**: スコア、進捗状況の追跡
+- **復習機能**: 間違えた問題の確認と再学習
+- **レスポンシブデザイン**: すべてのデバイスに対応
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 対象資格
 
-## Expanding the ESLint configuration
+- AWS Solutions Architect Associate
+- AWS Solutions Architect Professional
+- AWS Developer Associate
+- その他のAWS認定試験
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 技術スタック
+
+- **フレームワーク**: React 19.2.5
+- **ビルドツール**: Vite 8.0.10
+- **言語**: JavaScript (JSX)
+- **スタイル**: CSS
+- **開発**: ESLint対応
+
+## インストール
+
+```bash
+npm install
+```
+
+## 開発環境の起動
+
+```bash
+npm run dev
+```
+
+ブラウザで http://localhost:5173 にアクセスしてください。
+
+## ビルド
+
+```bash
+npm run build
+```
+
+## プレビュー
+
+```bash
+npm run preview
+```
+
+## コード品質チェック
+
+```bash
+npm run lint
+```
+
+## ファイル構成
+
+```
+src/
+├── App.jsx          # メインアプリケーションコンポーネント
+├── main.jsx         # React初期化
+├── questions.js     # AWS問題データベース
+├── App.css          # アプリケーションスタイル
+└── assets/          # 画像・アイコン
+public/
+└── assets/          # 公開アセット
+```
+
+## 使い方
+
+1. アプリを起動します
+2. クイズモードを選択（順番/ランダム/カテゴリー別/本番形式）
+3. 出題される問題に回答
+4. 即座にフィードバックを受け取る
+5. スコアと進捗を確認
+
+## 学習のコツ
+
+- **まず基礎知識を確認**: 順番モードで体系的に学習
+- **弱点対策**: 間違えた問題のカテゴリーを重点的に学習
+- **本番対策**: 本番形式で時間制限下での問題演習
+- **復習**: 間違えた問題を何度も復習して定着させる
+
+## ライセンス
+
+MIT
+
+## 作成者
+
+[@yama3133](https://github.com/yama3133)
